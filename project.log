@@ -132,3 +132,11 @@ Name: count, dtype: int64
 2026-07-28 21:56:28 | INFO | ML | shell=powershell
 2026-07-28 21:56:28 | INFO | ML | cwd=.
 2026-07-28 21:56:28 | INFO | ML | github_actions=False
+2026-07-28 22:22:12 | INFO | ML | === RUN START ===
+2026-07-28 22:22:12 | INFO | ML | project=ML
+2026-07-28 22:22:12 | INFO | ML | repo_dir=ml-05-ensembles
+2026-07-28 22:22:12 | INFO | ML | python=3.14.2
+2026-07-28 22:22:12 | INFO | ML | os=Windows 11
+2026-07-28 22:22:12 | INFO | ML | shell=powershell
+2026-07-28 22:22:12 | INFO | ML | cwd=.
+2026-07-28 22:22:12 | INFO | ML | github_actions=False
