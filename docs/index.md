@@ -21,19 +21,11 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+I changed TARGET_COL from species to sex and renamed the logger to M05 Modification so the run is identifiable in project.log. I chose this because species is nearly separable from bill and flipper measurements, so all three models scored above 0.98 and the ensembles had no room to show a gain. Sex is a harder target and leaves error for them to work on.
 
-Include:
+I verified the change by rerunning the notebook top to bottom and reading project.log. Accuracy fell for every model, and the ensembles pulled further ahead of the single tree: the random forest gained 7.2 percent over it on sex against 1.4 percent on species, and gradient boosting gained 5.4 percent against no gain at all. The feature importance ranking reversed, with bill depth and body mass moving from last to first.
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+The change itself was easy, one constant and an updated summary. What it produced was not obvious in advance, which is the part that mattered.
 
 ## Phase 5. Custom Project
 

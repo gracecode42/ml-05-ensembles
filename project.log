@@ -140,3 +140,130 @@ Name: count, dtype: int64
 2026-07-28 22:22:12 | INFO | ML | shell=powershell
 2026-07-28 22:22:12 | INFO | ML | cwd=.
 2026-07-28 22:22:12 | INFO | ML | github_actions=False
+2026-07-30 19:57:39 | INFO | M05 Modification | === RUN START ===
+2026-07-30 19:57:39 | INFO | M05 Modification | project=M05 Modification
+2026-07-30 19:57:39 | INFO | M05 Modification | repo_dir=ml-05-ensembles
+2026-07-30 19:57:39 | INFO | M05 Modification | python=3.14.2
+2026-07-30 19:57:39 | INFO | M05 Modification | os=Windows 11
+2026-07-30 19:57:39 | INFO | M05 Modification | shell=powershell
+2026-07-30 19:57:39 | INFO | M05 Modification | cwd=notebooks
+2026-07-30 19:57:39 | INFO | M05 Modification | github_actions=False
+2026-07-30 19:57:39 | INFO | M05 Modification | Confirming installation:
+2026-07-30 19:57:39 | INFO | M05 Modification |   python:       3.14.2
+2026-07-30 19:57:39 | INFO | M05 Modification |   pandas:       3.0.5
+2026-07-30 19:57:39 | INFO | M05 Modification |   numpy:        2.5.1
+2026-07-30 19:57:39 | INFO | M05 Modification |   scikit-learn: 1.9.0
+2026-07-30 19:57:39 | INFO | M05 Modification |   seaborn:      0.13.2
+2026-07-30 19:57:39 | INFO | M05 Modification |   matplotlib:   3.11.1
+2026-07-30 19:58:34 | INFO | M05 Modification | Loading dataset: penguins
+2026-07-30 19:58:34 | INFO | M05 Modification | Loaded: 344 rows (instances), 7 columns
+2026-07-30 19:58:34 | INFO | M05 Modification | Original rows: 344
+2026-07-30 19:58:34 | INFO | M05 Modification | Model rows:    342
+2026-07-30 19:58:34 | INFO | M05 Modification | Classes in target 'species': ['Adelie', 'Chinstrap', 'Gentoo']
+2026-07-30 19:58:34 | DEBUG | M05 Modification | Class counts:
+species
+Adelie       151
+Gentoo       123
+Chinstrap     68
+Name: count, dtype: int64
+2026-07-30 20:05:47 | INFO | M05 Modification | Loading dataset: penguins
+2026-07-30 20:05:47 | INFO | M05 Modification | Loaded: 344 rows (instances), 7 columns
+2026-07-30 20:05:47 | INFO | M05 Modification | Original rows: 344
+2026-07-30 20:05:47 | INFO | M05 Modification | Model rows:    333
+2026-07-30 20:05:47 | INFO | M05 Modification | Classes in target 'sex': ['Female', 'Male']
+2026-07-30 20:05:47 | DEBUG | M05 Modification | Class counts:
+sex
+Male      168
+Female    165
+Name: count, dtype: int64
+2026-07-30 20:06:27 | INFO | M05 Modification | Train instances: 266
+2026-07-30 20:06:27 | INFO | M05 Modification | Test instances: 67
+2026-07-30 20:07:18 | INFO | M05 Modification | Fitting single tree + two ensembles
+2026-07-30 20:07:18 | DEBUG | M05 Modification |   fitted: single_tree
+2026-07-30 20:07:18 | DEBUG | M05 Modification |   fitted: random_forest
+2026-07-30 20:07:18 | DEBUG | M05 Modification |   fitted: gradient_boosting
+2026-07-30 20:07:54 | INFO | M05 Modification |   single_tree        test accuracy = 0.836
+2026-07-30 20:07:54 | INFO | M05 Modification |   random_forest      test accuracy = 0.896
+2026-07-30 20:07:54 | INFO | M05 Modification |   gradient_boosting  test accuracy = 0.881
+2026-07-30 20:07:54 | INFO | M05 Modification | Best model: random_forest with test accuracy = 0.896
+2026-07-30 20:11:34 | INFO | M05 Modification | Random forest feature importances (high to low):
+2026-07-30 20:11:34 | INFO | M05 Modification |   bill_depth_mm        0.356
+2026-07-30 20:11:34 | INFO | M05 Modification |   body_mass_g          0.325
+2026-07-30 20:11:34 | INFO | M05 Modification |   bill_length_mm       0.203
+2026-07-30 20:11:34 | INFO | M05 Modification |   flipper_length_mm    0.116
+2026-07-30 20:41:59 | INFO | M05 Modification | =========================
+2026-07-30 20:41:59 | INFO | M05 Modification | SUMMARY
+2026-07-30 20:41:59 | INFO | M05 Modification | =========================
+2026-07-30 20:41:59 | INFO | M05 Modification | Dataset: penguins   Target: sex (classification)
+2026-07-30 20:41:59 | INFO | M05 Modification | Rows: 333 (266 train / 67 test)
+2026-07-30 20:41:59 | INFO | M05 Modification | Compared: single tree vs. random forest vs. gradient boosting
+2026-07-30 20:41:59 | INFO | M05 Modification |   single_tree        test accuracy = 0.836
+2026-07-30 20:41:59 | INFO | M05 Modification |   random_forest      test accuracy = 0.896
+2026-07-30 20:41:59 | INFO | M05 Modification |   gradient_boosting  test accuracy = 0.881
+2026-07-30 20:41:59 | INFO | M05 Modification | Best model: random_forest (0.896)
+2026-07-30 20:41:59 | INFO | M05 Modification | Gain over single tree: +0.060
+2026-07-30 20:41:59 | INFO | M05 Modification | Top feature:     bill_depth_mm (0.356)
+2026-07-30 20:41:59 | INFO | M05 Modification | Weakest feature: flipper_length_mm (0.116)
+2026-07-30 20:41:59 | INFO | M05 Modification | =========================
+2026-07-30 22:03:06 | INFO | M05 Modification | === RUN START ===
+2026-07-30 22:03:06 | INFO | M05 Modification | project=M05 Modification
+2026-07-30 22:03:06 | INFO | M05 Modification | repo_dir=ml-05-ensembles
+2026-07-30 22:03:06 | INFO | M05 Modification | python=3.14.2
+2026-07-30 22:03:06 | INFO | M05 Modification | os=Windows 11
+2026-07-30 22:03:06 | INFO | M05 Modification | shell=powershell
+2026-07-30 22:03:06 | INFO | M05 Modification | cwd=notebooks
+2026-07-30 22:03:06 | INFO | M05 Modification | github_actions=False
+2026-07-30 22:03:06 | INFO | M05 Modification | Confirming installation:
+2026-07-30 22:03:06 | INFO | M05 Modification |   python:       3.14.2
+2026-07-30 22:03:06 | INFO | M05 Modification |   pandas:       3.0.5
+2026-07-30 22:03:06 | INFO | M05 Modification |   numpy:        2.5.1
+2026-07-30 22:03:06 | INFO | M05 Modification |   scikit-learn: 1.9.0
+2026-07-30 22:03:06 | INFO | M05 Modification |   seaborn:      0.13.2
+2026-07-30 22:03:06 | INFO | M05 Modification |   matplotlib:   3.11.1
+2026-07-30 22:03:06 | INFO | M05 Modification | Loading dataset: penguins
+2026-07-30 22:03:06 | INFO | M05 Modification | Loaded: 344 rows (instances), 7 columns
+2026-07-30 22:03:06 | INFO | M05 Modification | Original rows: 344
+2026-07-30 22:03:06 | INFO | M05 Modification | Model rows:    333
+2026-07-30 22:03:06 | INFO | M05 Modification | Classes in target 'sex': ['Female', 'Male']
+2026-07-30 22:03:06 | DEBUG | M05 Modification | Class counts:
+sex
+Male      168
+Female    165
+Name: count, dtype: int64
+2026-07-30 22:03:06 | INFO | M05 Modification | Train instances: 266
+2026-07-30 22:03:06 | INFO | M05 Modification | Test instances: 67
+2026-07-30 22:03:06 | INFO | M05 Modification | Fitting single tree + two ensembles
+2026-07-30 22:03:06 | DEBUG | M05 Modification |   fitted: single_tree
+2026-07-30 22:03:06 | DEBUG | M05 Modification |   fitted: random_forest
+2026-07-30 22:03:06 | DEBUG | M05 Modification |   fitted: gradient_boosting
+2026-07-30 22:03:06 | INFO | M05 Modification |   single_tree        test accuracy = 0.836
+2026-07-30 22:03:06 | INFO | M05 Modification |   random_forest      test accuracy = 0.896
+2026-07-30 22:03:06 | INFO | M05 Modification |   gradient_boosting  test accuracy = 0.881
+2026-07-30 22:03:06 | INFO | M05 Modification | Best model: random_forest with test accuracy = 0.896
+2026-07-30 22:03:06 | INFO | M05 Modification | Random forest feature importances (high to low):
+2026-07-30 22:03:06 | INFO | M05 Modification |   bill_depth_mm        0.356
+2026-07-30 22:03:06 | INFO | M05 Modification |   body_mass_g          0.325
+2026-07-30 22:03:06 | INFO | M05 Modification |   bill_length_mm       0.203
+2026-07-30 22:03:06 | INFO | M05 Modification |   flipper_length_mm    0.116
+2026-07-30 22:03:06 | INFO | M05 Modification | =========================
+2026-07-30 22:03:06 | INFO | M05 Modification | SUMMARY
+2026-07-30 22:03:06 | INFO | M05 Modification | =========================
+2026-07-30 22:03:06 | INFO | M05 Modification | Dataset: penguins   Target: sex (classification)
+2026-07-30 22:03:06 | INFO | M05 Modification | Rows: 333 (266 train / 67 test)
+2026-07-30 22:03:06 | INFO | M05 Modification | Compared: single tree vs. random forest vs. gradient boosting
+2026-07-30 22:03:06 | INFO | M05 Modification |   single_tree        test accuracy = 0.836
+2026-07-30 22:03:06 | INFO | M05 Modification |   random_forest      test accuracy = 0.896
+2026-07-30 22:03:06 | INFO | M05 Modification |   gradient_boosting  test accuracy = 0.881
+2026-07-30 22:03:06 | INFO | M05 Modification | Best model: random_forest (0.896)
+2026-07-30 22:03:06 | INFO | M05 Modification | Gain over single tree: +0.060
+2026-07-30 22:03:06 | INFO | M05 Modification | Top feature:     bill_depth_mm (0.356)
+2026-07-30 22:03:06 | INFO | M05 Modification | Weakest feature: flipper_length_mm (0.116)
+2026-07-30 22:03:06 | INFO | M05 Modification | =========================
+2026-07-30 22:22:15 | INFO | ML | === RUN START ===
+2026-07-30 22:22:15 | INFO | ML | project=ML
+2026-07-30 22:22:15 | INFO | ML | repo_dir=ml-05-ensembles
+2026-07-30 22:22:15 | INFO | ML | python=3.14.2
+2026-07-30 22:22:15 | INFO | ML | os=Windows 11
+2026-07-30 22:22:15 | INFO | ML | shell=powershell
+2026-07-30 22:22:15 | INFO | ML | cwd=.
+2026-07-30 22:22:15 | INFO | ML | github_actions=False

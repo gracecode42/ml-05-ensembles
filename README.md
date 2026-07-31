@@ -12,14 +12,15 @@ This project focuses on learning to combine models to get better predictions.
 
 We learn to:
 
-- understand why ensembles outperform single models
+- understand when ensembles outperform single models
 - train random forests and gradient boosting models
 - read feature importance scores
-- tune key hyperparameters
+- compare a single model against ensembles on the same held-out data
 
 Links:
 
-- [ml_05_ensembles.ipynb](notebooks/ml_05_ensembles.ipynb)
+- [ml_05_ensembles.ipynb](notebooks/ml_05_ensembles.ipynb) - example notebook
+- [ml_05_ensembles_gracecode42_modification.ipynb](notebooks/ml_05_ensembles_gracecode42_modification.ipynb) - Phase 4 notebook, predicting `sex` instead of `species`
 
 ## Command Reference
 
