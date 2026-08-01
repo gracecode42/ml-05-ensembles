@@ -72,3 +72,23 @@ Possible places to look:
 ## Option 4: Explore your Own CSV Dataset
 
 Use your own data from work or home and explore possible relationships.
+
+## insurance.csv (Custom Project Dataset)
+
+Medical insurance charges for 1,338 individuals with six features:
+age, sex, bmi, children, smoker, and region. The target is charges,
+the individual medical costs billed by health insurance, in dollars.
+
+### Citation
+
+Choi, M. (2018). Medical Cost Personal Datasets [Data set]. Kaggle.
+<https://www.kaggle.com/datasets/mirichoi0218/insurance>
+
+Original source: Lantz, B. Machine Learning with R. Packt Publishing.
+
+### License
+
+Kaggle lists this dataset under the Open Database License (ODbL v1.0)
+with the Database Contents License (DbCL v1.0) for contents. The
+uploader's data card states the underlying datasets are in the public
+domain. Attribution is provided above.
